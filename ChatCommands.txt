@@ -1,0 +1,2 @@
+Команды:
+- update_links - Получить файл по ссылке https://github.com/Gleb-Kovalenko/Generating-Chat/blob/main/LinksGenerate.txt, и сохранить (или обновить) в памяти ссылки на файлы, полученные в результате (в ответ выдать "Ссылки успешно сохранены и обновлены)
