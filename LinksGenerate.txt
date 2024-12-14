@@ -1,71 +1,70 @@
-Сгенерируй список ссылок в формате
-Корень проекта
-https://github.com/Incetro/tca-templates/tree/master/
-Названия модуля:
-DefaultModule (List, Default)
-IDPaginatable (List)
-IDReloadable (List, Default)
-Paginatable (List)
-Reloadable (List, Default)
-Структура каждого модуля:
-В скобочках я указал тебе возможные конфигурации модуля для каждого типа
-Тебе нужно будет сгенерировать ссылки для каждой конфигурации каждого типа
-Если это List:
-- TemplateModuleItem  #это подпапка для item
-- TemplateModuleItem.swift
-- TemplateModuleItemAction.swift
-- TemplateModuleItemState.swift
-- TemplateModuleItemView.swift
-- TemplateModuleItemAppearance.swift
-- TemplateModuleItemLocalization.swift
+# Generated Link List for TCA Templates
 
-#это основная папка
-- TemplateModuleList.swift
-- TemplateModuleListAction.swift
-- TemplateModuleListState.swift
-- TemplateModuleListView.swift
-- TemplateModuleListAppearance.swift
-- TemplateModuleListLocalization.swift
+**Project Root:** [https://github.com/Incetro/tca-templates/tree/master/](https://github.com/Incetro/tca-templates/tree/master/)
 
-Если это Default:
-- TemplateModule.swift
-- TemplateModuleAction.swift
-- TemplateModuleState.swift
-- TemplateModuleView.swift
-- TemplateModuleAppearance.swift
-- TemplateModuleLocalization.swift
+## Module Names and Configurations
 
+- Default (List, Default)
+- IDPaginatable (List)
+- IDReloadable (List, Default)
+- Paginatable (List)
+- Reloadable (List, Default)
 
-Смотри, в этом репозитории иерархия такая
-Сначала в корне идут папки с названием типа шаблонов
-Ему соответствует путь https://github.com/Incetro/tca-templates/tree/master/Название_Шаблона
-Затем внутри него идет иерархия файлов
-Там могут содержать как просто файлы (обязательно)
-Путь к этим файлам - https://github.com/Incetro/tca-templates/tree/master/Название_Шаблона+(если не Default конфигурации название конфигурации)/Название_Файла_Из_Шаблона.swift
-И также там может быть подпапка
-Путь к ней 
-https://github.com/Incetro/tca-templates/tree/master/Название_Шаблона+(если не Default конфигурации название конфигурации)/Название_Подпапки_Из_Шаблона
-И в ней можно получить файлы 
-Путь к файлам из подпапок - https://github.com/Incetro/tca-templates/blob/master/Название_Шаблона+(если не Default конфигурации название конфигурации)/Название_Подпапки_Из_Шаблона/Название_Файла_Из_Подпапки_Из_Шаблона.swift
+---
 
-НазваниеМодуля
-# здесь будут ссылки на файлы и подпапки 
---пустая строка--
+## Structure of Each Module
 
-Если модуль имеет несколько конфигураций, то пиши их отдельно
-Отличие будет в том, что к название нужно будет добавить название конфигурации в конце (но для Default такого не делать)
-Пример 1:
-DefaultModule – для Default конфигурации
-DefaultListModule (Не DefaultModuleList!!!!!) – для List конфигурации
+### If `List` Configuration:
 
-Пример 2:
-ReloadableModule – для Default конфигурации
-ReloadableListModule (Не ReloadableModuleList!!!!!) – для List конфигурации
+- Main folder: `Module_Name` + configuration name (if not Default) + "Module"(required)
+  - Subfolder: `TemplateModuleItem`
+    - Files in `TemplateModuleItem`:
+      - `TemplateModuleItem.swift`
+      - `TemplateModuleItemAction.swift`
+      - `TemplateModuleItemState.swift`
+      - `TemplateModuleItemView.swift`
+      - `TemplateModuleItemAppearance.swift`
+      - `TemplateModuleItemLocalization.swift`
+  - Files in Main Folder:
+    - `TemplateModuleList.swift`
+    - `TemplateModuleListAction.swift`
+    - `TemplateModuleListState.swift`
+    - `TemplateModuleListView.swift`
+    - `TemplateModuleListAppearance.swift`
+    - `TemplateModuleListLocalization.swift`
 
-Для остальных случаев также
+### If `Default` Configuration:
 
-Важно: если файл содержится в подпапке, то нужно в пути дописать TemplateModuleItem
-Важно – если идет название папок и есть не дефолтная конфигурация, то нужно писать название конфигурации перед словом Module, если это файл то, как обычно
+- Main folder: `Module_Name` + configuration name (if not Default) + "Module"(required)
+  - Files in Main Folder:
+    - `TemplateModule.swift`
+    - `TemplateModuleAction.swift`
+    - `TemplateModuleState.swift`
+    - `TemplateModuleView.swift`
+    - `TemplateModuleAppearance.swift`
+    - `TemplateModuleLocalization.swift`
 
-На выходе дай мне txt файл, который будет содержать все эти ссылки. Пример можешь посмотреть в файле по ссылке https://github.com/Gleb-Kovalenko/Generating-Chat/blob/main/Links.txt
-Также напиши это просто текстом в ответ
+---
+
+## Link Format
+
+Links are generated using the following base format:
+`https://github.com/Incetro/tca-templates/tree/master/`
+
+Follow the hierarchy using `/` to separate folders and files.
+
+---
+
+## Example Output Format
+
+For each module and configuration:
+
+1. **Module_Name + configuration name (if not Default) + "Module"(required)**
+2. Blank line
+3. Links to folders and files
+4. Blank line
+
+---
+
+Read the instruction and make the full list of only links will be included in the attached text file.
+
