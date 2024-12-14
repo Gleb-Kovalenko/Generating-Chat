@@ -1,0 +1,68 @@
+Сгенерируй список ссылок в формате
+Корень проекта
+https://github.com/Incetro/tca-templates/tree/master/
+Названия модуля:
+DefaultModule (List, Default)
+IDPaginatable (List)
+IDReloadable (List, Default)
+Paginatable (List)
+Reloadable (List, Default)
+Структура каждого модуля:
+В скобочках я указал тебе возможные конфигурации модуля для каждого типа
+Тебе нужно будет сгенерировать ссылки для каждой конфигурации каждого типа
+Если это List:
+- TemplateModuleItem  #это подпапка для item
+- TemplateModuleItem.swift
+- TemplateModuleItemAction.swift
+- TemplateModuleItemState.swift
+- TemplateModuleItemView.swift
+- TemplateModuleItemAppearance.swift
+- TemplateModuleItemLocalization.swift
+
+#это основная папка
+- TemplateModuleList.swift
+- TemplateModuleListAction.swift
+- TemplateModuleListState.swift
+- TemplateModuleListView.swift
+- TemplateModuleListAppearance.swift
+- TemplateModuleListLocalization.swift
+
+Если это Default:
+- TemplateModule.swift
+- TemplateModuleAction.swift
+- TemplateModuleState.swift
+- TemplateModuleView.swift
+- TemplateModuleAppearance.swift
+- TemplateModuleLocalization.swift
+
+
+Смотри, в этом репозитории иерархия такая
+Сначала в корне идут папки с названием типа шаблонов
+Ему соответствует путь https://github.com/Incetro/tca-templates/tree/master/Название_Шаблона
+Затем внутри него идет иерархия файлов
+Там могут содержать как просто файлы (обязательно)
+Путь к этим файлам - https://github.com/Incetro/tca-templates/tree/master/Название_Шаблона+(если не Default конфигурации название конфигурации)/Название_Файла_Из_Шаблона.swift
+И также там может быть подпапка
+Путь к ней 
+https://github.com/Incetro/tca-templates/tree/master/Название_Шаблона+(если не Default конфигурации название конфигурации)/Название_Подпапки_Из_Шаблона
+И в ней можно получить файлы 
+Путь к файлам из подпапок - https://github.com/Incetro/tca-templates/blob/master/Название_Шаблона+(если не Default конфигурации название конфигурации)/Название_Подпапки_Из_Шаблона/Название_Файла_Из_Подпапки_Из_Шаблона.swift
+
+
+На выходе дай мне txt файл, который будет содержать все эти ссылки в формате
+Также напиши это просто текстом в ответ
+
+НазваниеМодуля
+# здесь будут ссылки на файлы и подпапки 
+--пустая строка--
+
+Важно: если файл содержится в подпапке, то нужно в пути дописать TemplateModuleItem
+
+Если модуль имеет несколько конфигураций, то пиши их отдельно
+Отличие будет в том, что к название нужно будет добавить название конфигурации в конце (но для Default такого не делать)
+Пример:
+DefaultModule – для Default конфигурации
+DefaultListModule – для List конфигурации
+
+Важно – если идет название папок и есть не дефолтная конфигурация, то нужно писать название конфигурации перед словом Module, если это файл то, как обычно
+
