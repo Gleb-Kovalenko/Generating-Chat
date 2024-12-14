@@ -5,4 +5,4 @@
 
 Команды:
 - help - вывести список всех доступных команд только из этого файла + full_update комадну, а также пояснение к ним
-- update_links - Получить файл по ссылке https://github.com/Gleb-Kovalenko/Generating-Chat/blob/main/Links.txt, и сохранить (или обновить) в памяти ссылки из результата (в ответ выдать "Ссылки успешно сохранены и обновлены)
+- update_links - Получить файл по ссылке https://github.com/Gleb-Kovalenko/Generating-Chat/blob/main/LinksGenerate.txt, и сохранить (или обновить) в памяти ссылки из результата (в ответ выдать "Ссылки успешно сохранены и обновлены)
